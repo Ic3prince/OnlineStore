@@ -1,4 +1,5 @@
 import { AppBar, Switch, Toolbar, Typography } from "@mui/material";
+import AboutPage from "../../features/about/AboutPage";
 
 interface Props{
     theme : boolean;
@@ -12,6 +13,7 @@ export default function Header({theme, handleThemeChange} : Props)
             <Toolbar>
             <Typography variant="h6">RE-STORE</Typography>
             <Switch checked={theme} onClick={handleThemeChange} />
+           
             </Toolbar>
         </AppBar>
     )
